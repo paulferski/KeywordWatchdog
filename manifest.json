@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "Keyword Watchdog",
+	"version": "0.1",
+	"description": "I find and replace keywords, woof woof.",
+	"author": "Paul Ferski",
+
+	"permissions": [
+          "storage"
+        ],
+	
+	"icons": {
+		"128": "gibson.png"
+	},
+
+	"browser_action": {
+    	"default_icon": "gibson.png",
+    	"default_popup": "popup.html"
+  	},
+
+	"content_scripts":
+	[
+    	{
+    		"matches": ["*://*/*"],
+    		"js": ["findreplace.js", "popup.js"],
+    		"run_at": "document_end"
+    	}
+  	]
+}

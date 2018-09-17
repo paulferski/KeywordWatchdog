@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Keyword Register</title>
+	<style>
+		body
+		{
+			height:123px;
+			width:173px;
+		}
+	</style>
+	<script type="text/javascript" src="popup.js"></script>
+	<script type="text/javascript" src="findreplace.js"></script>
+</head>
+<body>
+	<form id="addKeyword">
+        <p>
+            <label for="title">Keyword to replace:</label><br />
+            <input type="text" id="keyword" name="keyword" size="20" value="" />
+        </p>
+        <p>
+            <label for="url">Replacement word:</label><br />
+            <input type="text" id="replacement" name="replacement" size="20" value="" />
+        </p>
+        <button id="saveButton">Save</button>
+		<button id="clearButton">Clear keywords</button>
+    </form>
+</body>
+</html>
